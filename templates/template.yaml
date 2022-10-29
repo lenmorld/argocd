@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: app-ui
+  name: app-ui-2
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: app-ui
+      app: app-ui-2
   template:
     metadata:
       labels:
-        app: app-ui
+        app: app-ui-2
     spec:
       containers:
-        - name: app-ui
+        - name: app-ui-2
           image: $IMAGE_VERSION
           ports:
             - containerPort: 4000
