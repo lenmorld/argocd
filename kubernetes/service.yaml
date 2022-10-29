@@ -10,4 +10,4 @@ spec:
   - port: 4000
     protocol: TCP
     targetPort: 4000
-    nodePort: 30200
+    nodePort: 30201
